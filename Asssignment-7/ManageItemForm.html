@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/Asstes/Bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/Asstes/Bootstrap/js/bootstrap.js">
+    <link rel="stylesheet" href="/Asstes/Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Asstes/Bootstrap/js/bootstrap.min.js">
+
+    <title>Manage Item</title>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
+        <img src="/Asstes/Image/logo.jpg" alt="" width="25" height="25">
+        <a href="" class="navbar-brand" style="font-size: 25px"> &nbsp;&nbsp;SHARU POS System</a>
+        <div class="collapse navbar-collapse" id="divv">
+            <ul class="navbar-nav" style="font-size: medium">
+                <li class="nav-item"><a href="../Asssignment-7/ManageCutomerForm.html" class="nav-link">Customers</a></li>
+                <li class="nav-item"><a href="../Asssignment-7/ManageItemForm.html" class="nav-link">Items</a></li>
+                <li class="nav-item"><a href="../Asssignment-7/ManageOrderForm.html" class="nav-link">Orders</a></li>
+                <li class="nav-item active"><a href="../Asssignment-7/ManagePlaceorderForm.html" class="nav-link">Place Order</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main class="container">
+    <section class="row p-4 m-0 object-fit-contain" id="Items">
+        <h2 class="text-success pt-5 m-lg-2">Manage Items</h2>
+        <section class="col border-dark m-3 border rounded object-fit-contain" >
+            <h5 class="text-dark text-center m-lg-3 pt-5" >Add Items</h5>
+            <form>
+                <div class="form-floating mb-3 mt-2">
+                    <input type="text" class="form-control" id="Iid" placeholder="Id">
+                    <label for="Iid">Item id</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="ItemDesc" placeholder="Name">
+                    <label for="ItemDesc">Description</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="UPrice" placeholder="Address">
+                    <label for="UPrice">Unit Price</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="Qty" placeholder="Contact">
+                    <label for="Qty">Quantity</label>
+                </div>
+            </form>
+
+            <div class="col-6 ms-5">
+                <button type="button" class="btn btn-success me-1 mt-2 mb-3">Save</button>
+                <button type="button" class="btn btn-warning me-1 mt-2 mb-3 ms-4">Update</button>
+            </div>
+
+        </section>
+
+        <section class="col border-dark m-3 border rounded object-fit-contain">
+            <h5 class="text-dark text-center m-lg-3 pb-3" >Item Details</h5>
+            <table class="table table-light table-striped" id="ItemTbl">
+                <thead>
+                <tr>
+                    <th style="background-color: seagreen" scope="col">Item Id</th>
+                    <th style="background-color: seagreen" scope="col">Description</th>
+                    <th style="background-color: seagreen" scope="col">Unit Price</th>
+                    <th style="background-color: seagreen" scope="col">Quantity</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+    </section>
+</main>
+
+
+</body>
+</html>

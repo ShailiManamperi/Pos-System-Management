@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/Asstes/Bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/Asstes/Bootstrap/js/bootstrap.js">
+    <link rel="stylesheet" href="/Asstes/Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Asstes/Bootstrap/js/bootstrap.min.js">
+
+    <title>Manage Customer</title>
+    <title>Manage Place Order</title>
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
+        <img src="/Asstes/Image/logo.jpg" alt="" width="25" height="25">
+        <a href="" class="navbar-brand" style="font-size: 25px"> &nbsp;&nbsp;SHARU POS System</a>
+        <div class="collapse navbar-collapse" id="divv">
+            <ul class="navbar-nav" style="font-size: medium">
+                <li class="nav-item"><a href="../Asssignment-7/ManageCutomerForm.html" class="nav-link">Customers</a></li>
+                <li class="nav-item"><a href="../Asssignment-7/ManageItemForm.html" class="nav-link">Items</a></li>
+                <li class="nav-item"><a href="../Asssignment-7/ManageOrderForm.html" class="nav-link">Orders</a></li>
+                <li class="nav-item active"><a href="../Asssignment-7/ManagePlaceorderForm.html" class="nav-link">Place Order</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main class="container">
+
+    <h2 style="color: blue" class="mt-2 border-bottom">Place Order</h2>
+
+    <section class="row mt-3 border border-dark rounded p-3">
+        <form action="">
+            <div class="row border border-dark rounded p-2">
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Order ID</span>
+                        <input class="form-control" type="text" placeholder="O-001" aria-label="Disabled input example" disabled>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Date</span>
+                        <input class="form-control" type="text" placeholder="2023-05-17" aria-label="Disabled input example" disabled>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">CustomerID</span>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Select ID</option>
+                            <option value="1">C001</option>
+                            <option value="2">C002</option>
+                            <option value="3">C003</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Customer Name</span>
+                        <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row mt-5 mb-2 p-3 border border-dark rounded">
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Item ID</span>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Select ID</option>
+                            <option value="1">I001</option>
+                            <option value="2">I002</option>
+                            <option value="3">I003</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Description</span>
+                        <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Qty On Hand</span>
+                        <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Unit Price</span>
+                        <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Quantity</span>
+                        <input class="form-control" type="text" placeholder="" aria-label="Disabled input example">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-10"></div>
+                <div class="col-2">
+                    <button type="button" class="btn btn-outline-success">Add to Cart</button>
+                    <button type="button" class="btn btn-outline-warning">Clear</button>
+                </div>
+            </div>
+
+        </form>
+    </section>
+
+    <section class="row mt-3 border border-dark rounded p-3">
+        <div class="row">
+            <table class="table table-light table-striped">
+                <thead>
+                <tr>
+                    <th style="background-color: seagreen" scope="col">Item ID</th>
+                    <th style="background-color: seagreen" scope="col">Description</th>
+                    <th style="background-color: seagreen" scope="col">Qty</th>
+                    <th style="background-color: seagreen" scope="col">Unit Price</th>
+                    <th style="background-color: seagreen" scope="col">Total</th>
+                    <th style="background-color: seagreen" scope="col">Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <form action="">
+            <div class="row mt-3">
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Total-Rs:</span>
+                        <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Discount-Rs:</span>
+                        <input class="form-control" type="number" placeholder="" aria-label="Disabled input example">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Sub Tot-Rs:</span>
+                        <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="row mt-3">
+            <div class="col-10"></div>
+            <div class="col-2">
+                <button type="button" class="btn btn-outline-success">Purchase</button>
+                <button type="button" class="btn btn-outline-danger">Cancel</button>
+            </div>
+        </div>
+    </section>
+</main>
+
+</body>
+</html>
