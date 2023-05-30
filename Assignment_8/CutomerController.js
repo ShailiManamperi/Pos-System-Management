@@ -84,7 +84,6 @@ $("#btnupdate").on('click',(event)=>{
 
 $("#btndelete").on("click",(event)=>{
     let id = $("#Cid").val();
-
     let per_arr = localStorage.getItem(data);
     let arr = [];
     if(per_arr){

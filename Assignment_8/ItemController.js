@@ -38,6 +38,7 @@ $('#btnsave1').on('click',(event) =>{
     let item_qty = $('#Qty').val();
 
     console.log(item_id+" "+item_desc+" "+item_price+" "+item_qty);
+
     let pre_data = localStorage.getItem(data1);
     console.log("ARR: ", pre_data);
 
